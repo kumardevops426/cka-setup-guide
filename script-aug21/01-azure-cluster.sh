@@ -1,6 +1,6 @@
-loc=eastus
+loc=southindia
 rg='rg-cka'
-# storageacc=wgckastorage
+# storageacc=ckastorage426
 vmimage=ubuntults
 shutdownutc=1230 #Auto Shutdown time in UTC
 
@@ -11,7 +11,7 @@ vnetaddressprefix='10.230.0.0/24'
 subnetaddressprefix='10.230.0.0/27'
 
 # Controller VM should have > 2 cpu
-controllervmsize='Standard_DS3' # check the available vm sizes in your region
+controllervmsize='Standard_D2s_v3' # check the available vm sizes in your region
 size='Standard_DS1'
 # az vm list-sizes -l eastus -o table
 
@@ -27,10 +27,10 @@ workerprivateippref='10.230.0.2'
 workeravblset='worker-avblset'
 
 
-adminuser=cka
+adminuser=infraadmin
 echo 'admin username is $adminuser'
 
-adminpwd='SuperDuper12#$'
+adminpwd='Rootadmin@123'
 # ask for password
 # read -s -p "Enter admin Password (should be minimum 12 char strong): " adminpwd
 # echo $adminpwd #must be min 12 char long with one number, one special char and alphabet
